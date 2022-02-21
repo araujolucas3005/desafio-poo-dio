@@ -4,7 +4,12 @@ import java.time.LocalDate;
 
 public class Mentoria extends Conteudo {
 
-    LocalDate data;
+    private LocalDate data;
+    
+    public Mentoria(String titulo, String descricao, LocalDate data) {
+    	super(titulo, descricao);
+    	this.data = data;
+    }
 
     public Mentoria() {
     }

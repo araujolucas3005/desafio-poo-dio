@@ -4,8 +4,13 @@ public class Curso extends Conteudo {
 
     private int cargaHoraria;
 
-    public Curso() {
+    public Curso(String titulo, String descricao, int cargaHoraria) {
+    	super(titulo, descricao);
+    	this.cargaHoraria = cargaHoraria;
     }
+    
+    public Curso() {
+	}
 
     @Override
     public double calcularXp() {
